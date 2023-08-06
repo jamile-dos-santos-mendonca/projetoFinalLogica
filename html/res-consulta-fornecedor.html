@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <title>Consulta Fornecedor</title>
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <!-- Resultado para consulta de um fornecedor -->
+        <form id="form" class="form">
+
+            <div class="form-control">
+                <label for="nomeempresa">Nome do Fornecedor:</label>
+                <input type="text" class="preechimento-auto" id="inputNomeEmpresaResConsultaFornecedor" placeholder="Digite o nome da empresa..." disabled value="Ativa Esportes comercio de atigos esportivos"/>
+            </div>
+
+            <div class="form-control">
+                <label for="cnpj">CNPJ:</label>
+                <input type="" id="inputCnpjResConsultaFornecedor" placeholder="Digite o CNPJ..." disabled value="05.356.471/0001-35"/>
+            </div>
+
+            <div class="form-control">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="inputEnderecoResConsultaFornecedor" placeholder="Digite o endereço..." disabled value="Rua Duque de Caxias 944"/>
+            </div>
+
+            <div class="form-control">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="inputTelefoneResConsultaFornecedor" placeholder="Digite o telefone..." disabled value="(48) 3052-3021"/>
+            </div>
+
+            <div class="form-control">
+                <label for="inputEmail">E-mail:</label>
+                <input type="email" id="inputEmailResConsultaFornecedor" placeholder="Digite o e-mail..." disabled value="ativaesportes@gmail.com"/>
+            </div>
+
+            <br><br>
+
+            <div>
+
+                <!-- Botoes para acões -->
+                <div id="alinhamento-botoes">
+
+                    <div class="form-save">
+                        <a href="alt-cad-fornecedor.html"><button type="button" id="btCadastro">Alterar Cadastro</button></a>
+                    </div>
+    
+                    <div class="form-delet">
+                        <button type="reset" id="btResConsultaFornecedorExcluir">Excluir Cadastro</button>
+                    </div>
+    
+                    <div>
+                        <a href="index.html"><button type="button">Voltar Menu</button></a>
+                    </div>
+    
+                </div>
+
+            </div>
+            <div id="msg-erro">  
+                <p id="txt-msg"></p>
+            </div>
+
+        </form>
+
+        <script src="../javascript/script.js"></script>
+</body>
+
+</html>

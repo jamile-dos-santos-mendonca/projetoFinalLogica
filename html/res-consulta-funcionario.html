@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <title>Consulta Funcionario</title>
+</head>
+<body>
+
+    <!-- Resultado para consulta de um Funcionario -->
+    <div class="container">
+
+        <form id="form" class="form">
+
+            <div class="form-control">
+                <label for="nomefuncionario">Nome:</label>
+                <input type="text" id="inputNomeEmpresaResConsultaFuncionario" placeholder="Digite o nome do funcionário..." disabled value="Ederson Duarte Damasio"/>
+            </div>
+
+            <div class="form-control">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="inputCpfResConsultaFuncionario" placeholder="Digite o CPF..." disabled value="120.465.635-92"/>
+            </div>
+
+            <div class="form-control">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="inputEnderecoResConsultaFuncionario" placeholder="Digite o endereço..." disabled value="Avenida Getulio Vargas 2455"/>
+            </div>
+
+            <div class="form-control">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="inputTelefoneResConsultaFuncionario" placeholder="Digite o telefone..." disabled value="(48) 99967-2335"/>
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail:</label>
+                <input type="text" id="inputEmailResConsultaFuncionario" placeholder="Digite o e-mail..." disabled value="ederson_duarte@hotmail.com"/>
+            </div>
+
+            <br><br>
+
+            <!-- Botoes para acões -->
+            <div id="alinhamento-botoes">
+
+                <div class="form-delet">
+                    <a href="alt-cad-funcionario.html"><button type="button" id="btExcluirCadFuncionario">Alterar Cadastro</button></a>                 
+                </div>
+
+                <div class="form-control">
+                    <button type="reset" id="btResConsultaFuncionarioExcluir">Excluir Cadastro</button>
+                </div>
+    
+                <div>
+                    <a href="index.html"><button type="button">Voltar Menu</button></a>
+                </div>
+    
+            </div>
+            <div id="msg-erro">  
+                <p id="txt-msg"></p>
+            </div>
+
+        </form>
+
+        <script src="../javascript/script.js"></script>
+</body>
+
+</html>

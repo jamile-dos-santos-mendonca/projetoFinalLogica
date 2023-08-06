@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <title>Cadastro Produto</title>
+    <script src="https://kit.fontawesome.com/993361fe37.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="../imagens/logo.png" width="200" height="100" alt="">
+    <h1>Cadastro de Produto</h1>
+    <div class="container">
+
+        <!-- Campos para cadastro de funcionário -->
+        <form id="form" class="form">
+
+            <div class="form-control">
+                <label for="tipotecido">Tipo de tecido:</label>
+                <input type="text" id="tipoTecido" placeholder="Digite o tipo de tecido..." />
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="dadosadicionais">Dados adicionais:</label>
+                <input type="text" id="dadosadicionais" placeholder="Digite dados adicionais..." />
+            </div>
+
+            <br><br>
+
+            <!-- Botoes para acões -->
+            <div id="alinhamento-botoes">
+
+                <div class="form-control">
+                    <button type="submit" id="btCadastro">Salvar</button>
+                </div>
+
+                <div class="form-delet">
+                    <button type="reset" id="btExcluirCadProduto">Excluir</button>
+                </div>
+                <div>
+                    <a href="index.html"><button type="button">Voltar Menu</button></a>
+                </div>
+
+            </div>
+            <div id="msg-erro">  
+                <p id="txt-msg"></p>
+            </div>
+
+        </form>
+
+        <script src="../javascript/script.js"></script>
+</body>
+
+</html>

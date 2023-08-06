@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../imagens/fundo1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+h1{
+    padding: none;
+    font-size: 80px;
+    color: rgb(232, 240, 245);
+    font-family: monospace; 
+}
+.container{
+    display: table;
+    width: 50%;
+    margin: auto;
+    border: 2px solid rgb(230, 230, 230);
+    padding: 20px;
+    background: url('../imagens/blur\ certo.webp');
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #000000b0;
+    position: absolute;    
+}
+
+p{
+    font-size: 20px;;
+}
+
+/* img{
+    width: 100px;
+    height: 100px;
+} */
+
+label{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#253A52;
+}
+
+input{
+    font-weight: bold;
+    width: calc(100% - 10px);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    color:#253A52;
+    border: 2px solid;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+button{
+    margin: 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #587B91;
+    border: 2px solid #587B91;
+    height: 100%;
+    width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.res-cons-voltar-menu{
+    width: 30%;
+}
+
+#alinhamento-botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#preechimento-auto{
+    font-weight: bold;
+}
+
+.form-control{
+    position: relative;
+}
+.form-control i{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    top: 70px;
+    text-align: center;
+    visibility: hidden;
+}
+
+/* Error and Sucess */
+.form-control.sucess input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control.error i.fa-circle-exclamation{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control.sucess i.fa-circle-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-save.save small{
+    color: #15601A;
+    visibility: visible;
+}
+
+.form-save small{
+    position: absolute;
+    padding: 10px;
+    left: 25%;
+    top: 70px;
+    width: 50%;
+    text-align: center;
+    visibility: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-save{
+    position: relative;
+}
+
+.form-delet.delet small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-delet small{
+    position: absolute;
+    padding: 10px;
+    left: 25%;
+    top: 80px;
+    width: 50%;
+    text-align: center;
+    visibility: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-delet{
+    position: relative;
+}
+
+
+
+input:disabled {
+    text-align: center;
+    background: rgb(231, 231, 231);
+}
+
+

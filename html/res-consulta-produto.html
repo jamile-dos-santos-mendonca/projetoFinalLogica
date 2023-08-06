@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <title>Consulta Produto</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Resultado para consulta de um produto -->
+        <form id="form" class="form">
+
+            <div class="form-control">
+                <label for="tipotecido">Tipo de tecido:</label>
+                <input type="text" id="inputTipoTecidoResConsultaProduto" disabled value="Moletom" />
+            </div>
+
+            <div class="form-control">
+                <label for="dadosadicionais">Dados adicionais:</label>
+                <input type="text" id="inputDadosAdicionaisResConsultaProduto" disabled value="Verde de bolinhas" />
+            </div>
+
+            <div class="form-control">
+                <label for="quantidade">Quantidade:</label>
+                <input type="text" id="inputQuantidadeResConsultaProduto" disabled value="12 uni" />
+            </div>
+
+            <div class="form-control">
+                <label for="valor-produto">Valor unitário:</label>
+                <input type="text" id="inputValorResConsultaProduto" disabled value="R$ 29,00" />
+            </div>
+
+            <br><br>
+
+            <!-- Botoes para acões -->
+            <div id="alinhamento-botoes">
+
+                <div class="form-save">
+                    <a href="alt-cad-produto.html"><button type="button" id="btCadastro">Alterar Cadastro</button></a>
+                </div>
+
+                <div class="form-delet">
+                    <button type="reset" id="btResConsultaProdutoExcluir">Excluir Cadastro</button>
+                </div>
+
+                <div>
+                    <a href="index.html"><button type="button">Voltar Menu</button></a>
+                </div>
+
+            </div>
+            <div id="msg-erro">  
+                <p id="txt-msg"></p>
+            </div>
+
+        </form>
+
+        <script src="../javascript/script.js"></script>
+</body>
+
+</html>
